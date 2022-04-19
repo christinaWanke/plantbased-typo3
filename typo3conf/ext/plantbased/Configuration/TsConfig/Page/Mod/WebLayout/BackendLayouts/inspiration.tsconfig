@@ -1,0 +1,38 @@
+mod.web_layout.BackendLayouts {
+    inspiration {
+        title = Inspiration
+        icon = EXT:plantbased/Resources/Public/Images/BackendLayouts/default.png
+        config {
+            backend_layout {
+                colCount = 1
+                rowCount = 3
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = Banner
+                                colPos = 0
+                            }
+                        }
+                    }
+                    2 {
+                        columns {
+                            1 {
+                                name = Content
+                                colPos = 1
+                            }
+                        }
+                    }
+                    3 {
+                        columns {
+                            1 {
+                                name = Galerie
+                                colPos = 2
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

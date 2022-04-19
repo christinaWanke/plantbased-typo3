@@ -1,0 +1,12 @@
+menu.top = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+menu.top {
+    levels = 2
+    as = mainnavigation
+    entryLevel = 1
+}
+
+menu.sidebar < menu.top
+menu.sidebar {
+    entryLevel = 2
+    as = sidebar
+}

@@ -1,0 +1,21 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="default" />
+
+
+<f:section name="content">
+
+    <section>
+        <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '0'}"/>
+    </section>
+
+    <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '1'}"/>
+
+    <div class="container-wrap">
+        <div class="row no-gutters">
+            <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '2'}"/>
+        </div>
+    </div>
+
+</f:section>
+
+</html>

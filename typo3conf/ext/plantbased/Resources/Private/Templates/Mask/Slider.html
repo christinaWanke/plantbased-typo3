@@ -1,0 +1,47 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<section class="home-slider js-fullheight owl-carousel">
+
+    <f:if condition="{data.tx_mask_repeat}">
+        <f:for each="{data.tx_mask_repeat}" as="data_item">
+            <f:if condition="{data_item.tx_mask_image}">
+                <f:for each="{data_item.tx_mask_image}" as="file">
+                    <div class="slider-item js-fullheight"
+                         style="background-image:url('{f:uri.image(image:'{file}')}')">
+                        <div class="overlay"></div>
+                        <div class="container">
+                            <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-end"
+                                 data-scrollax-parent="true">
+                                <div class="col-md-7 text ftco-animate"
+                                     data-scrollax=" properties: { translateY: '70%' }">
+
+                                    <!-- Header -->
+                                    <f:if condition="{data_item.tx_mask_header}">
+                                        <h1 class="mb-4"
+                                            data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
+                                            {data_item.tx_mask_header}</h1>
+                                    </f:if>
+
+                                    <!-- Text -->
+                                    <f:if condition="{data_item.tx_mask_text}">
+                                        <f:format.html><!--p
+                                            data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"-->
+                                            {data_item.tx_mask_text}<!--/p--></f:format.html>
+                                    </f:if>
+
+                                    <!-- Link -->
+                                    <f:if condition="{data_item.tx_mask_link}">
+                                        <f:link.typolink parameter="{data_item.tx_mask_link}"
+                                                         class="btn btn-white btn-outline-white px-4 py-3 mt-3"></f:link.typolink>
+                                    </f:if>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </f:for>
+            </f:if>
+        </f:for>
+    </f:if>
+</section>
+
+</html>

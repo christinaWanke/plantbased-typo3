@@ -1,0 +1,10 @@
+@import 'EXT:fluid_styled_content/Configuration/TypoScript/setup.typoscript'
+@import 'EXT:mask/Configuration/TypoScript/setup.typoscript'
+@import 'EXT:news/Configuration/TypoScript/setup.txt'
+@import 'EXT:plantbased/Configuration/TypoScript/News/News.config.typoscript'
+@import 'EXT:form/Configuration/TypoScript/setup.typoscript'
+
+@import 'EXT:plantbased/Configuration/TypoScript/Helper/DynamicContent.typoscript'
+@import 'EXT:plantbased/Configuration/TypoScript/Menu/Menu.main.typoscript'
+@import 'EXT:plantbased/Configuration/TypoScript/Lang/Lang.switch.typoscript'
+@import 'EXT:plantbased/Configuration/TypoScript/Page/Page.main.typoscript'

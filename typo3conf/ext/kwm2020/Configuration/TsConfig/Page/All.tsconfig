@@ -1,0 +1,13 @@
+#
+# PageTS for KWM 2020
+#
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:kwm2020/Configuration/TsConfig/Page/RTE.tsconfig">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:kwm2020/Configuration/TsConfig/Page/TCEFORM.tsconfig">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:kwm2020/Configuration/TsConfig/Page/TCEMAIN.tsconfig">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:kwm2020/Configuration/TsConfig/Page/Mod/WebLayout/BackendLayouts.tsconfig">
+
+
+tx_news.templateLayouts {
+    1 = KWM News
+    2 = KWM Special News
+}

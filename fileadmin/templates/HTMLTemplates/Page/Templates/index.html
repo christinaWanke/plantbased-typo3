@@ -1,0 +1,14 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:layout name="kwm"/>
+<f:section name ="main">
+    <--f:debug>{_all}<--/f:debug--!>
+    <div id = main>
+        <p>Mein erstes Fluid Template.</p>
+        <f:format.raw>{fluidLabel}</f:format.raw>
+        <br/>
+        <f:format.currency currencySign="€" decimalSeparator="," thousandsSeparator=".">1234567890.12</f:format.currency>
+        <h1>{data.title}</h1>
+        <f:cObject typoscriptObjectPath="lib.content.col0"/>
+    </div>
+</f:section>

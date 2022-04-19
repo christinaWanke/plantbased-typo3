@@ -1,0 +1,17 @@
+#
+# TCEFORM
+#
+TCEFORM {
+    pages {
+
+    }
+    tt_content {
+        layout.addItems.10 = --------------
+        layout.addItems.11 = Text mit Bild links
+        layout.addItems.12 = Text mit Bild und Link
+        layout.addItems.13 = Text Header
+        layout.addItems.14 = Text mit Bild rechts
+
+
+    }
+}

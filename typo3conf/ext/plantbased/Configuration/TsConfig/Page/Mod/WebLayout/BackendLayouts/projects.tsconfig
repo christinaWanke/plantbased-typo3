@@ -1,0 +1,30 @@
+mod.web_layout.BackendLayouts {
+    projects {
+        title = Projekt
+        icon = EXT:plantbased/Resources/Public/Images/BackendLayouts/default.png
+        config {
+            backend_layout {
+                colCount = 1
+                rowCount = 2
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = Banner
+                                colPos = 0
+                            }
+                        }
+                    }
+                    2 {
+                        columns {
+                            1 {
+                                name = News/Projects/Content/Login
+                                colPos = 1
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

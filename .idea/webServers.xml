@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="ddf3cf31-5d7e-4171-aec6-7f1f313c56e0" name="CMS20" url="http://http://cms20.s1910456034.student.kwmhgb.at">
+        <fileTransfer rootFolder="/usr/home/sstud135/public_html/cms20/htdocs" accessType="SFTP" host="dedi50.your-server.de" port="222" sshConfigId="7c05b05b-c57c-4382-933f-3cd97e61edf0" sshConfig="sstud135@dedi50.your-server.de:222 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

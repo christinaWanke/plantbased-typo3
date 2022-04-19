@@ -1,0 +1,54 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+    <div class="container">
+        <div class="row">
+            <f:if condition="{data.tx_mask_again}">
+                    <f:for each="{data.tx_mask_again}" as="data_item">
+                            <div class="col-md-6 col-lg-3 ftco-animate">
+                                <div class="staff">
+                                    <f:if condition="{data_item.tx_mask_image}">
+                                        <f:for each="{data_item.tx_mask_image}" as="file">
+                                            <div class="img" style="background-image: url('{f:uri.image(image:'{file}')}')"></div>
+                                        </f:for>
+                                    </f:if>
+
+                                    <div class="text pt-4">
+                                        <f:if condition="{data_item.tx_mask_link}">
+                                            <f:then>
+                                                <f:link.typolink parameter="{data_item.tx_mask_link}">
+                                                    <f:if condition="{data_item.tx_mask_header}">
+                                                        <h3>{data_item.tx_mask_header}</h3>
+                                                    </f:if>
+                                                </f:link.typolink>
+                                            </f:then>
+                                            <f:else>
+                                                <f:if condition="{data_item.tx_mask_header}">
+                                                    <h3>{data_item.tx_mask_header}</h3>
+                                                </f:if>
+                                            </f:else>
+
+                                        </f:if>
+                                        <f:if condition="{data_item.tx_mask_subheader}">
+                                            <span class="position mb-2">{data_item.tx_mask_subheader}</span>
+                                        </f:if>
+                                        <f:if condition="{data_item.tx_mask_text}">
+                                            <f:format.html>{data_item.tx_mask_text}</f:format.html>
+                                        </f:if>
+                                        <ul class="ftco-social d-flex">
+                                            <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                                            <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                                            <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
+                                            <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                    </f:for>
+            </f:if>
+        </div>
+    </div>
+
+
+
+
+</html>

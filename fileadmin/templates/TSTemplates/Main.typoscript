@@ -1,0 +1,32 @@
+#Fluid Styled Content
+lib.content.col0 = CONTENT
+lib.content.col0 {
+    table = tt_content
+    select{
+        orderBy = sorting
+        where = colPos=0
+        languageField = sys_language_uid
+    }
+}
+
+# override template path for fluid styled content
+lib.contentElement.templateRootPaths.10 = fileadmin/templates/HTMLTemplates/fluid_styled_content/Templates
+
+page >
+page = PAGE
+
+#enable error output
+page.config.contentObjectExceptionHandler = 0
+page.10 < lib.content.col0
+
+page.10 = FLUIDTEMPLATE
+page.10 {
+    file = fileadmin/templates/HTMLTemplates/Page/Templates/index.html
+    partialRootPath = fileadmin/templates/HTMLTemplates/Page/Partials/
+    layoutRootPath = fileadmin/templates/HTMLTemplates/Page/Layouts/
+    variables {
+        fluidLabel = TEXT
+        fluidLabel.value = das kommt von Typoscript!<b/>
+    }
+}
+

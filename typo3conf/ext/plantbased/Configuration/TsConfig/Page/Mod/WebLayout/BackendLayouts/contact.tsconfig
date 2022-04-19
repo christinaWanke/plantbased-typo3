@@ -1,0 +1,38 @@
+mod.web_layout.BackendLayouts {
+    contact {
+        title = Kontakt
+        icon = EXT:plantbased/Resources/Public/Images/BackendLayouts/default.png
+        config {
+            backend_layout {
+                colCount = 1
+                rowCount = 3
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = Banner
+                                colPos = 0
+                            }
+                        }
+                    }
+                    2 {
+                        columns {
+                            1 {
+                                name = Detail
+                                colPos = 1
+                            }
+                        }
+                    }
+                    3 {
+                        columns {
+                            1 {
+                                name = Formular
+                                colPos = 2
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+
+<article>
+    <f:if condition="{data.tx_mask_icon}">
+        <span class="icon {data.tx_mask_icon}"></span>
+    </f:if>
+
+    <div class="content">
+        <f:if condition="{data.tx_mask_student}">
+            <h3>{data.tx_mask_student}</h3>
+        </f:if>
+        <f:if condition="{data.tx_mask_comment}">
+            {data.tx_mask_comment}
+        </f:if>
+   </div>
+</article>
+
+
+
+
+

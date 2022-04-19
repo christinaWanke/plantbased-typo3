@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2020-11-20UTC10:20:330">
+        <header>
+            <authorName>Christina Wanke</authorName>
+            <authorEmail>s1910456034@students.fh-hagenberg.at</authorEmail>
+        </header>
+        <body>
+            <trans-unit id="statement">
+               <source>Statements to the KWM Study</source>
+               <target>Aussagen zum KWM Studium</target>
+            </trans-unit>
+            <trans-unit id="focus">
+                <source>Focus in the KWM Study</source>
+                <target>Schwerpunkte im KWM Studium</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

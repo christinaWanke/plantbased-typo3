@@ -1,0 +1,14 @@
+######################
+#### DEPENDENCIES ####
+######################
+@import 'EXT:fluid_styled_content/Configuration/TypoScript/setup.typoscript'
+@import 'EXT:mask/Configuration/TypoScript/setup.typoscript'
+@import 'EXT:news/Configuration/TypoScript/setup.txt'
+@import 'EXT:kwm2020/Configuration/TypoScript/News/News.config.typoscript'
+@import 'EXT:form/Configuration/TypoScript/setup.typoscript'
+# renders default content elements
+@import 'EXT:kwm2020/Configuration/TypoScript/Helper/DynamicContent.typoscript'
+@import 'EXT:kwm2020/Configuration/TypoScript/Menu/Menu.main.typoscript'
+@import 'EXT:kwm2020/Configuration/TypoScript/Lang/Lang.switch.typoscript'
+@import 'EXT:kwm2020/Configuration/TypoScript/Page/Page.main.typoscript'
+

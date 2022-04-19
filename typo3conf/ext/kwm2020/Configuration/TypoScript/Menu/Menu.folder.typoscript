@@ -1,0 +1,8 @@
+menu.folder = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+menu.folder {
+    special = directory
+    as = folderMenu
+    special.value = 14
+}
+
+

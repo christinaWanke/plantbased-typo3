@@ -1,0 +1,49 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="home" />
+
+
+<f:section name="slider-services">
+    <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '0'}"/>
+    <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '1'}"/>
+</f:section>
+
+<f:section name="about">
+    <section class="ftco-section ftc-no-pb">
+        <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '2'}"/>
+    </section>
+
+</f:section>
+
+<f:section name="content">
+    <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '3'}"/>
+</f:section>
+
+<f:section name="workshop">
+
+    <section class="ftco-section">
+        <div class="container-wrap">
+            <div class="row no-gutters">
+                <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '4'}"/>
+            </div>
+        </div>
+    </section>
+
+    <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '5'}"/>
+
+    <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '6'}"/>
+
+
+
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row">
+            <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '7'}"/>
+            </div>
+        </div>
+    </section>
+</f:section>
+
+
+
+
+

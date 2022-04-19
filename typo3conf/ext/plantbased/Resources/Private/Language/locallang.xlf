@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2020-12-11UTC20:45:280">
+        <header>
+            <authorName>Christina Wanke</authorName>
+            <authorEmail>s1910456034@students.fh-hagenberg.at</authorEmail>
+        </header>
+        <body>
+            <trans-unit id="more">
+                <source>learn more</source>
+            </trans-unit>
+            <trans-unit id="facts">
+                <source>Facts about us</source>
+            </trans-unit>
+            <trans-unit id="afew">
+                <source>A few</source>
+            </trans-unit>
+            <trans-unit id="workers">
+                 <source>Employees</source>
+            </trans-unit>
+            <trans-unit id="projects">
+                 <source>Projects</source>
+            </trans-unit>
+
+            <trans-unit id="days">
+                 <source>Working days</source>
+            </trans-unit>
+
+            <trans-unit id="contact">
+                  <source>Contact</source>
+            </trans-unit>
+
+            <trans-unit id="info">
+                   <source>Information</source>
+            </trans-unit>
+
+            <trans-unit id="question">
+                   <source>More questions?</source>
+            </trans-unit>
+
+            <trans-unit id="address">
+                   <source>Gerberstraße 18, 1010 Vienna, Austria</source>
+            </trans-unit>
+
+
+        </body>
+    </file>
+</xliff>

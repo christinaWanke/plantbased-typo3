@@ -1,0 +1,26 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="default" />
+
+
+<f:section name="content">
+
+    <section>
+        <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '0'}"/>
+    </section>
+
+    <section>
+        <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '1'}"/>
+        <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '2'}"/>
+    </section>
+
+    <section>
+        <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '3'}"/>
+    </section>
+
+    <section class="ftco-section ftc-no-pb">
+        <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '4'}"/>
+    </section>
+
+</f:section>
+
+</html>

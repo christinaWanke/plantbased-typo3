@@ -1,0 +1,46 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<section class="ftco-section contact-section">
+    <div class="container">
+
+        <div class="row d-flex mb-5 contact-info">
+            <div class="w-100"></div>
+            <div class="col-md-3">
+                <f:if condition="{data.tx_mask_address}">
+                    <f:if condition="{data.header}">
+                        <p><b>{data.header}</b></p>
+                    </f:if>
+                    <p>{data.tx_mask_address}</p>
+                </f:if>
+            </div>
+            <div class="col-md-3">
+                <f:if condition="{data.tx_mask_phone}">
+                    <f:if condition="{data.tx_mask_header2}">
+                        <p><b>{data.tx_mask_header2}</b></p>
+                    </f:if>
+                    <p>{data.tx_mask_phone}</p>
+                </f:if>
+            </div>
+            <div class="col-md-3">
+                <f:if condition="{data.tx_mask_email}">
+                    <f:if condition="{data.tx_mask_header3}">
+                        <p><b>{data.tx_mask_header3}</b></p>
+                    </f:if>
+                    <p>{data.tx_mask_email}</p>
+                </f:if>
+            </div>
+            <div class="col-md-3">
+                <f:if condition="{data.tx_mask_website}">
+                    <f:if condition="{data.tx_mask_header4}">
+                        <p><b>{data.tx_mask_header4}</b></p>
+                    </f:if>
+                    <f:link.typolink parameter="{data.tx_mask_website}"></f:link.typolink>
+                </f:if>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+
+
+</html>

@@ -1,0 +1,29 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<section class="ftco-services bg-light">
+    <div class="container">
+        <div class="row">
+            <f:if condition="{data.tx_mask_repeating}">
+                    <f:for each="{data.tx_mask_repeating}" as="data_item">
+                            <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+                                <div class="media block-6 services d-block">
+                                    <div class="icon d-flex justify-content-center align-items-center">
+                                        <span class="flaticon-idea"></span>
+                                    </div>
+                                    <div class="media-body p-2 mt-3">
+                                        <f:if condition="{data_item.tx_mask_header}">
+                                            <h3 class="heading">{data_item.tx_mask_header}</h3>
+                                        </f:if>
+                                        <f:if condition="{data_item.tx_mask_text}">
+                                            <f:format.html>{data_item.tx_mask_text}</f:format.html>
+                                        </f:if>
+                                    </div>
+                                </div>
+                            </div>
+                    </f:for>
+            </f:if>
+        </div>
+    </div>
+</section>
+
+</html>

@@ -1,0 +1,3 @@
+@import 'EXT:kwm2020/Configuration/TypoScript/Page/Page.config.typoscript'
+@import 'EXT:kwm2020/Configuration/TypoScript/Page/Page.meta.typoscript'
+@import 'EXT:kwm2020/Configuration/TypoScript/Page/Page.typoscript'

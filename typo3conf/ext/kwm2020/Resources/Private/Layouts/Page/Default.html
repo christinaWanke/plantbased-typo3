@@ -1,0 +1,34 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Main -->
+    <div id="main">
+        <div class="inner">
+
+            <!-- Header -->
+            <f:render partial="header" arguments="{_all}" />
+
+            <!-- Main Content of Page  -->
+            <f:render section="content" />
+
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar">
+        <div class="inner">
+
+
+            <!-- Menu -->
+            <f:render partial="menu" arguments="{_all}" />
+
+            <!-- Contact -->
+            <f:render partial="contact" arguments="{_all}" />
+
+
+        </div>
+    </div>
+
+</div>

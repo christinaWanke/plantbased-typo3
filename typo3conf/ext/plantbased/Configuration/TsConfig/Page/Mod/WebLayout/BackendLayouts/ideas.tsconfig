@@ -1,0 +1,54 @@
+mod.web_layout.BackendLayouts {
+    Ideas {
+        title = Ideen
+        icon = EXT:plantbased/Resources/Public/Images/BackendLayouts/default.png
+        config {
+            backend_layout {
+                colCount = 1
+                rowCount = 5
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = Banner
+                                colPos = 0
+                            }
+                        }
+                    }
+                    2 {
+                        columns {
+                            1 {
+                                name = Header
+                                colPos = 1
+                            }
+                        }
+                    }
+                    3 {
+                        columns {
+                            1 {
+                                name = Galerie
+                                colPos = 2
+                            }
+                        }
+                    }
+                    4 {
+                        columns {
+                            1 {
+                                name = Subheader
+                                colPos = 3
+                            }
+                        }
+                    }
+                    5 {
+                        columns {
+                            1 {
+                                name = Content
+                                colPos = 4
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,78 @@
+mod.web_layout.BackendLayouts {
+    home {
+        title = Home
+        icon = EXT:plantbased/Resources/Public/Images/BackendLayouts/default.png
+        config {
+            backend_layout {
+                colCount = 1
+                rowCount = 6
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = Banner
+                                colPos = 0
+                            }
+                        }
+                    }
+                    2 {
+                        columns {
+                            1 {
+                                name = Services
+                                colPos = 1
+                            }
+                        }
+                    }
+                    3 {
+                        columns {
+                            1 {
+                                name = About
+                                colPos = 2
+                            }
+                        }
+                    }
+                    4 {
+                        columns {
+                            1 {
+                                name = Header
+                                colPos = 3
+                            }
+                        }
+                    }
+                    5 {
+                        columns {
+                            1 {
+                                name = Galerie
+                                colPos = 4
+                            }
+                        }
+                    }
+                    6 {
+                        columns {
+                            1 {
+                                name = Infocontent
+                                colPos = 5
+                            }
+                        }
+                    }
+                    7 {
+                        columns {
+                            1 {
+                                name = Header
+                                colPos = 6
+                            }
+                        }
+                    }
+                    8 {
+                        columns {
+                            1 {
+                                name = News/Projekte
+                                colPos = 7
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

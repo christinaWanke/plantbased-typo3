@@ -1,0 +1,22 @@
+plugin.tx_news {
+    view{
+        templateRootPaths {
+            10 = EXT:plantbased/Resources/Private/Templates
+        }
+        partialRootPaths {
+            10 = EXT:plantbased/Resources/Private/Partials/News
+        }
+        layoutRootPaths {
+            10 = EXT:plantbased/Resources/Private/Layouts/News
+        }
+    }
+
+    _LOCAL_LANG{
+        de{
+            more-link = weiterlesen
+            back-link = zurück zur Übersicht
+            dateFormat = %d.%m.%Y
+        }
+    }
+
+}

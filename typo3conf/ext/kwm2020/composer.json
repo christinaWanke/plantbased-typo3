@@ -1,0 +1,18 @@
+{
+    "name": "fh-hagenberg/kwm2020",
+    "type": "typo3-cms-extension",
+    "description": "",
+    "homepage": "https://www.fh-ooe.at",
+    "license": ["GPL-2.0-or-later"],
+    "keywords": ["TYPO3 CMS"],
+    "require": {
+        "typo3/cms-core": "^10.2",
+        "typo3/cms-rte-ckeditor": "^10.2",
+        "typo3/cms-fluid-styled-content": "^10.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "FhHagenberg\\Kwm2020\\": "Classes/"
+        }
+    }
+}

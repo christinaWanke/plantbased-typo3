@@ -1,0 +1,100 @@
+##############
+#### PAGE ####
+##############
+page = PAGE
+page.config.contentObjectExceptionHandler = 0
+page {
+    typeNum = 0
+    shortcutIcon = EXT:kwm2020/Resources/Public/Icons/favicon.ico
+
+    10 = FLUIDTEMPLATE
+    10 {
+        # Template names will be generated automatically by converting the applied
+        # backend_layout, there is no explicit mapping necessary anymore.
+        #
+        # BackendLayout Key
+        # subnavigation_right_2_columns -> SubnavigationRight2Columns.html
+        #
+        # Backend Record
+        # uid: 1 -> 1.html
+        #
+        # Database Entry
+        # value: -1 -> None.html
+        # value: pagets__subnavigation_right_2_columns -> SubnavigationRight2Columns.html
+        templateName = TEXT
+        templateName {
+            cObject = TEXT
+            cObject {
+                data = pagelayout
+                required = 1
+                case = uppercamelcase
+                split {
+                    token = pagets__
+                    cObjNum = 1
+                    1.current = 1
+                }
+            }
+            ifEmpty = Default
+        }
+        templateRootPaths {
+            0 = EXT:kwm2020/Resources/Private/Templates/Page/
+            1 = {$page.fluidtemplate.templateRootPath}
+        }
+        partialRootPaths {
+            0 = EXT:kwm2020/Resources/Private/Partials/Page/
+            1 = {$page.fluidtemplate.partialRootPath}
+        }
+        layoutRootPaths {
+            0 = EXT:kwm2020/Resources/Private/Layouts/Page/
+            1 = {$page.fluidtemplate.layoutRootPath}
+        }
+        dataProcessing {
+            10 < menu.top
+            20 < menu.breadcrumbs
+            30 < menu.folder
+            40 < menu.sidebar
+            50 < lang.switch
+        }
+    }
+
+
+
+    includeCSSLibs {
+
+    }
+
+    includeCSS {
+
+        kwm2020_layout = EXT:kwm2020/Resources/Public/Css/main.css
+    }
+
+    includeJSLibs {
+
+    }
+
+    includeJS {
+
+    }
+
+    includeJSFooterlibs {
+
+    }
+
+    includeJSFooter {
+
+        jQuery = EXT:kwm2020/Resources/Public/JavaScript/Dist/jquery.min.js
+        browser = EXT:kwm2020/Resources/Public/JavaScript/Dist/browser.min.js
+        breakpoints = EXT:kwm2020/Resources/Public/JavaScript/Dist/breakpoints.min.js
+        util = EXT:kwm2020/Resources/Public/JavaScript/Dist/util.js
+        main = EXT:kwm2020/Resources/Public/JavaScript/Dist/main.js
+
+    }
+}
+#get login form content element
+lib.record = RECORDS
+lib.record {
+    source = 49
+    tables = tt_content
+}
+
+

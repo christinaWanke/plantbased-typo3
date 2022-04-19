@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2020-12-11UTC20:45:280">
+        <header>
+            <authorName>Christina Wanke</authorName>
+            <authorEmail>s1910456034@students.fh-hagenberg.at</authorEmail>
+        </header>
+        <body>
+            <trans-unit id="more">
+                <source>learn more</source>
+                <target>mehr erfahren</target>
+            </trans-unit>
+
+            <trans-unit id="facts">
+                <source>Facts about us</source>
+                <target>Fakten über uns</target>
+            </trans-unit>
+
+            <trans-unit id="afew">
+                <source>A Few</source>
+                <target>Ein Paar</target>
+            </trans-unit>
+
+            <trans-unit id="workers">
+                <source>Employees</source>
+                <target>Mitarbeiter</target>
+            </trans-unit>
+
+            <trans-unit id="projects">
+                <source>Projects</source>
+                <target>Projekte</target>
+            </trans-unit>
+
+            <trans-unit id="days">
+                 <source>Working days</source>
+                 <target>Arbeitstage</target>
+            </trans-unit>
+
+            <trans-unit id="projects">
+                  <source>Contact</source>
+                  <target>Kontakt</target>
+            </trans-unit>
+
+            <trans-unit id="info">
+                  <source>Information</source>
+                  <target>Informationen</target>
+            </trans-unit>
+
+            <trans-unit id="info">
+                  <source>More questions?</source>
+                  <target>Noch Fragen?</target>
+            </trans-unit>
+
+            <trans-unit id="address">
+                  <source>Gerberstraße 18, 1010 Vienna, Austria</source>
+                  <target>Gerberstraße 18, 1010 Wien, Österreich</target>
+            </trans-unit>
+
+
+        </body>
+    </file>
+</xliff>
